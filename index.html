@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Pro Trading Platform</title>
+    
+    <!-- 强制HTTPS跳转 (方案C优化版) -->
+    <meta http-equiv="refresh" content="0; url=https://professionaltrading.durablesites.com?utm_source=stocktwits">
+    
+    <!-- 浏览器兼容性处理 -->
+    <script type="text/javascript">
+        // 防止某些浏览器不执行meta跳转
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.replace("https://professionaltrading.durablesites.com?utm_source=stocktwits");
+            }, 50);
+        };
+        
+        // 如果仍然失败，显示手动跳转按钮
+        setTimeout(function() {
+            document.getElementById("manualRedirect").style.display = "block";
+        }, 1000);
+    </script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: #f5f7fa;
+        }
+        #manualRedirect {
+            display: none;
+            margin-top: 30px;
+        }
+        .btn {
+            background: #0056b3;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Professional Trading Platform</h1>
+    <p>You should be redirected automatically...</p>
+    
+    <div id="manualRedirect">
+        <p>If redirection doesn't work, click below:</p>
+        <a href="https://professionaltrading.durablesites.com?utm_source=stocktwits" class="btn">
+            Go to Platform Now
+        </a>
+    </div>
+</body>
+</html>
